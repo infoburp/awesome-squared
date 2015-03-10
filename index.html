@@ -1,23 +1,20 @@
-
 <!DOCTYPE html>
 <html>
   <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <style>
-      body {background-color: black; color: #B20E66}
-      .p{
-      width:300px;
-      height:200px;
-      position:absolute;
-      left:50%;
-      top:50%;
-      margin:-100px 0 0 -150px;
-      }
+    body {
+      background-color: black;
+      color: #B20E66
+    }
     </style>
   </head>
   <body>
-<h1 id="reason">you rock!</h1>
-  <script>
+    <div>
+      <h1 id="reason">you rock!</h1>
+      <p>press F5 or refresh for more <3</p>
+    </div>
+    <script>
     var taglines = ["people like you",
     "you're beautiful",
     "you're funny",
@@ -31,13 +28,11 @@
     "you treat people with respect",
     "you belong",
     "you are special",
-    "you are loved ❤",
+    "you are loved <3",
     "there's no-one quite like you",
     "you like to try new things",
     "you get on well even with people who annoy you"]
-    
-    $("#reason").text(taglines[Math.floor(Math.random()*taglines.length)];);
-  </script>
-  <p>press F5 or refresh ❤</p>
+    $("#reason").text(taglines[Math.floor(Math.random()*taglines.length)]);
+    </script>
   </body>
 </html>
